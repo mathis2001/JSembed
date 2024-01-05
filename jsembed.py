@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 import re
 import argparse
@@ -7,7 +9,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-p", "--pdf", help="Path to the original PDF file", type=str)
 parser.add_argument("-s", "--svg", help="Path to the original SVG file", type=str)
 parser.add_argument("-j", "--js", help="Path to the JavaScript file to embed", type=str)
-parser.add_argument("-o", "--output", help="Output file name (.pdf)", type=str)
+parser.add_argument("-o", "--output", help="Output file name (.pdf or .svg)", type=str)
 args = parser.parse_args()
 
 class bcolors:
